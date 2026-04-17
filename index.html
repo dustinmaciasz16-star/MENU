@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis Proyectos</title>
+  <title>DustinDev</title>
 
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Fuente -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -14,71 +16,58 @@
 
 <body>
 
-    <nav class="navbar navbar-light bg-transparent px-4">
-        <img class="logo" src="assets/img/3.png" alt="Logo DustinDev">
-    </nav>
+  <!-- Canvas nieve -->
+  <canvas id="snowCanvas"></canvas>
 
-    <div class="container text-center mt-5">
-        <h1 class="titulo mb-4">Mis Proyectos</h1>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark px-4">
+    <a class="navbar-brand logo-text" href="#">DustinDev</a>
 
-        <div class="row justify-content-center g-4">
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <div class="col-md-4">
-                <div class="card proyecto-card">
-
-                    <img src="assets/img/1.png" class="card-img-top" alt="Juego de cazador">
-
-                    <div class="card-body">
-                        <h5 class="card-title">Juego de Cazador</h5>
-                        <p class="card-text">
-                            Juego interactivo donde debes cazar la comida y recolectar la mayor cantidad de puntos antes de que se acabe el tiempo.
-                        </p>
-                        <a href="https://juego-cazando-kappa.vercel.app/" target="_blank" class="btn btn-custom">
-                            Ver proyecto
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card proyecto-card">
-
-                    <img src="assets/img/2.png" class="card-img-top" alt="Juego del limón">
-
-                    <div class="card-body">
-                        <h5 class="card-title">Juego del Limón</h5>
-                        <p class="card-text">
-                            Juego interactivo donde debes atrapar el limón que va cayendo y evitar que toque el suelo. Tienes 5 vidas y debes alcanzar la mayor cantidad de puntos.
-                        </p>
-                        <a href="https://tu-proyecto2.vercel.app" target="_blank" class="btn btn-custom">
-                            Ver proyecto
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card proyecto-card">
-
-                    <img src="assets/img/4.png" class="card-img-top" alt="Simulador de crédito">
-
-                    <div class="card-body">
-                        <h5 class="card-title">Simulador de Crédito</h5>
-                        <p class="card-text">
-                            Aplicación donde ingresas tus ingresos y egresos para solicitar un crédito. Calcula el monto, plazo y tasa, y determina si es aprobado o rechazado.
-                        </p>
-                        <a href="https://tu-proyecto2.vercel.app" target="_blank" class="btn btn-custom">
-                            Ver proyecto
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
+    <div class="collapse navbar-collapse justify-content-end" id="menu">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="proyecto.html">Proyectos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="perfil.html">Perfil</a>
+        </li>
+      </ul>
     </div>
+  </nav>
+
+  <!-- Bienvenida -->
+  <main class="container text-center hero">
+    <h1>Bienvenido a mi portafolio</h1>
+    <p>
+      Aquí encontrarás algunos de mis proyectos desarrollados en programación,
+      enfocados en lógica, diseño y funcionalidad.
+    </p>
+    <a href="#" class="btn btn-main mt-3">Ver proyectos</a>
+    <!-- Sección actual -->
+<section class="trabajo container text-center mt-5">
+  
+  <h2 class="titulo-sec">Actualmente trabajando en</h2>
+
+  <p class="texto-sec">
+    Este proyecto forma parte de mi proceso de aprendizaje, desarrollado dentro de un curso
+    enfocado en desarrollo de software.
+  </p>
+
+  <div class="logos-trabajo">
+    <img src="assets/img/5.png" alt="Creator">
+    <img src="assets/img/6.png" alt="Mobile">
+    <img src="assets/img/7.png" alt="Mobile">
+  </div>
+
+</section>
+  </main>
+
+  <!-- JS -->
+  <script src="assets/js/index.js"></script>
 
 </body>
 </html>
